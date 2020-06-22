@@ -1,0 +1,21 @@
+<ion-content>
+    <ion-card color="primary">
+        <ion-card-header>
+            <ion-card-title>Saúde </ion-card-title>
+            <ion-card-subtitle> Bem vindo ao aplicativo </ion-card-subtitle>
+        </ion-card-header>
+    </ion-card>
+
+    <ion-item class="ion-margin-top" lines="block" color="primary">
+        <ion-input class="input" type="email" placeholder="E-mail" [(ngModel)]="userLogin.email"></ion-input>
+    </ion-item>
+    <ion-item class="ion-margin-top" lines="block" color="primary">
+        <ion-input class="input" type="password" placeholder="Senha" [(ngModel)]="userLogin.password"></ion-input>
+    </ion-item>
+    <ion-button class="ion-margin-top" (click)="login()" color="primary">
+        <span class="login">Entrar</span>
+    </ion-button>
+    <ion-button class="ion-margin-top" (click)="modal()" color="primary">
+        <span class="login">Cadastrar</span>
+    </ion-button>
+</ion-content>
